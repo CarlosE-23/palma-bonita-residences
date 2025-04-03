@@ -318,11 +318,23 @@
   position: relative;
 }
 
+@media (max-width: 600px) {
+  #section-2 {
+    background-color: var(--quarter-color);
+    min-height: 20vh;
+  }
+
+  #section-2 .content {
+    width: 100%;
+  }
+}
+
 #text-effect-container {
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translateX(-50%) translateY(-50%);
+  width: 100%;
 }
 
 /* Section 4 */
