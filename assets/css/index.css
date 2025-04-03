@@ -581,7 +581,8 @@
   width: 100%;
 }
 
-#contact-us .info-content form > div:first-child {
+#contact-us .info-content form > div:nth-child(1),
+#contact-us .info-content form > div:nth-child(2) {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
