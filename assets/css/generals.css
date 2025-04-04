@@ -81,6 +81,27 @@ ol {
   max-height: 70vh;
 }
 
+.button-container {
+  border: 1px solid var(--primary-color);
+  border-radius: 5px;
+  width: max-content;
+  padding: 5px 10px;
+  transition: 300ms ease-in-out;
+  cursor: pointer;
+}
+
+.button-container a {
+  color: var(--primary-color);
+}
+
+.button-container:hover a {
+  color: var(--quintary-color);
+}
+
+.button-container:hover {
+  background-color: var(--primary-color);
+}
+
 @keyframes showLeft {
   0% {
     opacity: 0;
