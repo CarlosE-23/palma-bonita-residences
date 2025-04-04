@@ -1,7 +1,7 @@
 :root {
   --primary-title-size: clamp(5rem, 2.009rem + 4.715vw, 8rem);
   --responsive-primary-title-size: clamp(4rem, 3.231rem + 2.462vw, 5rem);
-  --secondary-title-size: clamp(3rem, 0.294rem + 3.765vw, 5rem);
+  --secondary-title-size: clamp(2.5rem, 0.294rem + 3.765vw, 5rem);
   --responsive-secondary-title-size: clamp(1rem, 2.069rem + 0.738vw, 2.6rem);
   --tertiary-title-size: 1.8rem;
   --responsive-tertiary-title-size: 1.2rem;
@@ -15,7 +15,7 @@
   --opacity-primary-color: #eaeaea30;
   --secondary-color: #272a33;
   --tertiary-color: #dee0e3;
-  --quarter-color: #e7746f;
+  --quarter-color: #0b305c;
   --quintary-color: #3d4249;
 
   --primary-icon-size: 2.5rem;
