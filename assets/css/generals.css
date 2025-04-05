@@ -1,6 +1,6 @@
 :root {
   --primary-title-size: clamp(5rem, 2.009rem + 4.715vw, 8rem);
-  --responsive-primary-title-size: clamp(4rem, 3.231rem + 2.462vw, 5rem);
+  --responsive-primary-title-size: clamp(2.8rem, 3.231rem + 2.462vw, 5rem);
   --secondary-title-size: clamp(2.5rem, 0.294rem + 3.765vw, 5rem);
   --responsive-secondary-title-size: clamp(1rem, 2.069rem + 0.738vw, 2.6rem);
   --tertiary-title-size: 1.8rem;
