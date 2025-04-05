@@ -13,7 +13,7 @@
 
 #header.active {
   padding: 0.8rem 3rem;
-  background-color: var(--secondary-color);
+  background-color: var(--blue-dark);
   box-shadow: 0 0 10px #111;
 }
 
@@ -36,6 +36,16 @@
   right: 0;
   bottom: 0;
   z-index: 1;
+  background-image: url(../../images/banner.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media (max-width: 450px) {
+  #banner-background {
+    background-image: url(../../images/banner-responsive.jpg);
+  }
 }
 
 #banner-background::after {
@@ -131,7 +141,7 @@
 /* Sección 1 - Diseño mejorado con iconos destacados */
 #section-1 {
   position: relative;
-  background-color: var(--secondary-color);
+  background-color: var(--blue-dark);
   padding: 8rem 4rem;
   overflow: hidden;
 }
@@ -153,7 +163,7 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
-  color: var(--tertiary-color);
+  color: var(--primary-color);
   position: relative;
   z-index: 2;
 }
@@ -224,7 +234,7 @@
 
 /* Sección 2 - Texto animado con fondo temático */
 #section-2 {
-  background-color: var(--quarter-color);
+  background-color: var(--blue-dark);
   min-height: 25vh;
   display: flex;
   align-items: center;
@@ -272,7 +282,7 @@
 /* Sección 4 - Diseño de imagen y texto mejorado */
 #section-4 {
   padding: 0;
-  background-color: var(--secondary-color);
+  background-color: var(--blue-medium);
 }
 
 .image-text-section {
@@ -283,8 +293,7 @@
 
 .image-container {
   flex: 1;
-  background: url("https://images.unsplash.com/photo-1566073771259-6a8506099945")
-    center/cover;
+  background: url(../../images/image-1.jpg) center/cover;
   position: relative;
 }
 
@@ -308,7 +317,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: var(--secondary-color);
+  background-color: var(--blue-dark);
 }
 
 .section-title {
@@ -326,7 +335,7 @@
 }
 
 .text-content {
-  color: var(--tertiary-color);
+  color: var(--primary-color);
 }
 
 .primary-text {
@@ -359,7 +368,7 @@
   display: inline-block;
   margin-top: 2rem;
   padding: 0.8rem 2rem;
-  background-color: var(--quarter-color);
+  background-color: var(--blue-light);
   color: var(--primary-color);
   border-radius: 5px;
   font-weight: bold;
@@ -372,7 +381,7 @@
 
 .brochure-btn:hover {
   background-color: var(--primary-color);
-  color: var(--quarter-color);
+  color: var(--blue-dark);
   transform: translateY(-2px);
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
@@ -431,7 +440,7 @@
 }
 /* Sección 5 - Beneficios con tarjetas mejoradas */
 #section-5 {
-  background-color: var(--quintary-color);
+  background-color: var(--blue-dark);
   text-align: center;
   position: relative;
 }
@@ -449,8 +458,12 @@
   font-weight: 400;
 }
 
+#section-5 .section-subtitle {
+  color: var(--primary-color);
+}
+
 #section-5 .primary-text {
-  color: var(--tertiary-color);
+  color: var(--red-light);
   max-width: 800px;
   margin: 0 auto 3rem;
   opacity: 0;
@@ -490,7 +503,7 @@
   left: 0;
   width: 100%;
   height: 5px;
-  background-color: var(--quarter-color);
+  background-color: var(--blue-light);
 }
 
 #section-5.active .benefit-card {
@@ -505,7 +518,7 @@
 .card-icon {
   width: 80px;
   height: 80px;
-  background-color: var(--quarter-color);
+  background-color: var(--blue-light);
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -531,14 +544,14 @@
 }
 
 .benefit-card p {
-  color: var(--tertiary-color);
+  color: var(--primary-color);
   font-size: var(--primary-text-size);
   line-height: 1.6;
 }
 
 /* Sección 7 - Modelos con pestañas mejoradas */
 #section-7 {
-  background-color: var(--secondary-color);
+  background-color: var(--blue-medium);
   text-align: center;
   position: relative;
 }
@@ -560,7 +573,7 @@
   display: block;
   width: 80px;
   height: 3px;
-  background-color: var(--quarter-color);
+  background-color: var(--blue-light);
   margin: 1.5rem auto;
 }
 
@@ -646,7 +659,7 @@
 
 .benefit-item i {
   font-size: 2.2rem;
-  color: var(--quarter-color);
+  color: var(--primary-color);
   margin-bottom: 1rem;
 }
 
@@ -657,7 +670,7 @@
 }
 
 .benefit-item p {
-  color: var(--tertiary-color);
+  color: var(--primary-color);
   font-size: var(--primary-text-size);
   line-height: 1.6;
 }
@@ -733,7 +746,7 @@
 /* Contact Us */
 
 #contact-us {
-  background-color: var(--secondary-color);
+  background-color: var(--blue-dark);
 }
 
 .info-container {
@@ -752,17 +765,11 @@
   justify-content: center;
   padding-bottom: 3rem;
   margin-bottom: 3rem;
-  border-bottom: 1px solid var(--opacity-primary-color);
+  border-bottom: 1px solid var(--blue-medium);
 }
 
 #contact-us .info-container > div:nth-child(1) h2 {
   color: var(--primary-color);
-  text-align: center;
-  margin-bottom: 1rem;
-}
-
-#contact-us .info-container > div:nth-child(1) p {
-  color: var(--tertiary-color);
   text-align: center;
 }
 
@@ -799,10 +806,10 @@
   resize: none;
   outline: none;
   padding: 0.5rem;
-  color: var(--opacity-primary-color);
+  color: var(--blue-medium);
   transition: 300ms ease-in-out;
   position: relative;
-  border: 1px solid var(--opacity-primary-color);
+  border: 1px solid var(--blue-medium);
 }
 
 #contact-us .info-content form h3 {
@@ -817,20 +824,20 @@
 
 #contact-us .info-content form textarea:focus,
 #contact-us .info-content form input:focus {
-  border: 1px solid var(--primary-color);
+  border: 1px solid var(--blue-light);
   color: var(--primary-color);
-  box-shadow: 0 0 5px var(--opacity-primary-color);
+  box-shadow: 0 0 5px var(--blue-light);
 }
 
 #contact-us .info-content form > input {
-  background-color: var(--quarter-color);
+  background-color: var(--blue-medium);
   color: var(--primary-color);
   cursor: pointer;
 }
 
 #contact-us .info-content form > input:hover {
-  text-shadow: 0 0 15px var(--opacity-primary-color);
-  box-shadow: 0 0 15px var(--opacity-primary-color);
+  text-shadow: 0 0 15px var(--blue-light);
+  box-shadow: 0 0 15px var(--blue-light);
 }
 
 #contact-us .info-content form .checkout {
@@ -846,7 +853,7 @@
   display: flex;
   gap: 0.5rem;
   width: max-content;
-  color: var(--tertiary-color);
+  color: var(--primary-color);
 }
 #contact-us .info-content form .checkout div input {
   width: 1rem;
@@ -867,7 +874,7 @@
   height: 100%;
   padding-bottom: 1rem;
   position: relative;
-  border-bottom: 1px solid var(--opacity-primary-color);
+  border-bottom: 1px solid var(--blue-light);
 }
 
 #contact-us .info .content:nth-child(3),
@@ -882,7 +889,7 @@
 
 #contact-us .info .content p,
 #contact-us .info .content a {
-  color: var(--tertiary-color);
+  color: var(--primary-color);
   line-height: 1.5;
 }
 #contact-us .info .content a {
@@ -908,14 +915,14 @@
   aspect-ratio: 1/1;
   width: 2.5rem;
   height: 2.5rem;
-  background-color: var(--quintary-color);
+  background-color: var(--blue-light);
   border-radius: 50%;
 }
 
 #contact-us .info .content .icon-container .icon {
   position: relative;
   z-index: 5;
-  color: var(--tertiary-color);
+  color: var(--blue-dark);
 }
 
 /* Mobil */

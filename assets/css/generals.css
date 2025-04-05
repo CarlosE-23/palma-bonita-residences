@@ -1,6 +1,6 @@
 :root {
-  --primary-title-size: clamp(5rem, 2.009rem + 4.715vw, 8rem);
-  --responsive-primary-title-size: clamp(2.8rem, 3.231rem + 2.462vw, 5rem);
+  --primary-title-size: clamp(4rem, 2.009rem + 4.715vw, 7rem);
+  --responsive-primary-title-size: clamp(1.8rem, 3.231rem + 2.462vw, 4rem);
   --secondary-title-size: clamp(2.5rem, 0.294rem + 3.765vw, 5rem);
   --responsive-secondary-title-size: clamp(1rem, 2.069rem + 0.738vw, 2.6rem);
   --tertiary-title-size: 1.8rem;
@@ -11,12 +11,14 @@
   --secondary-text-size: clamp(0.85rem, 0.735rem + 0.369vw, 1rem);
   --responsive-secondary-text-size: clamp(1rem, 0.501rem + 0.786vw, 1.5rem);
 
-  --primary-color: #fff;
-  --opacity-primary-color: #eaeaea30;
-  --secondary-color: #272a33;
-  --tertiary-color: #dee0e3;
-  --quarter-color: #0b305c;
-  --quintary-color: #3d4249;
+  --primary-color: #fff; /* Blanco (se mantiene) */
+  --opacity-primary-color: #eaeaea30; /* Blanco con opacidad (se mantiene) */
+  --blue-dark: #0b305c; /* Azul oscuro original */
+  --blue-medium: #1a4b8c; /* Azul más vivo */
+  --blue-light: #3a7bd5; /* Azul claro */
+  --red-dark: #8e0000; /* Rojo oscuro */
+  --red-medium: #c62828; /* Rojo principal */
+  --red-light: #ff5f52;
 
   --primary-icon-size: 2.5rem;
 }
@@ -71,14 +73,20 @@ ol {
 
 .full-image {
   width: 100%;
-  max-height: 80vh;
   padding: 0;
+}
+
+.full-image .background {
+  background-image: url(../../images/image-2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .full-image .video {
   width: 100%;
-  object-fit: cover;
-  max-height: 70vh;
+  object-fit: contain;
+  max-height: 100vh;
 }
 
 .button-container {
@@ -95,7 +103,7 @@ ol {
 }
 
 .button-container:hover a {
-  color: var(--quintary-color);
+  color: var(--blue-dark);
 }
 
 .button-container:hover {
