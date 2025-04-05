@@ -54,6 +54,25 @@ const textList = [
 
 textEffect(textList, $textEffect);
 
+// Funcionalidad para las pestañas
+document.querySelectorAll(".tab-btn").forEach((button) => {
+  button.addEventListener("click", () => {
+    const tabId = button.getAttribute("data-tab");
+
+    // Remover clase active de todos los botones y contenidos
+    document
+      .querySelectorAll(".tab-btn")
+      .forEach((btn) => btn.classList.remove("active"));
+    document
+      .querySelectorAll(".tab-content")
+      .forEach((content) => content.classList.remove("active"));
+
+    // Agregar active al botón clickeado y su contenido correspondiente
+    button.classList.add("active");
+    document.getElementById(`${tabId}-tab`).classList.add("active");
+  });
+});
+
 // Intersection Observer Functions
 
 const observerFunction = () => {
