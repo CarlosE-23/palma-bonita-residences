@@ -536,6 +536,10 @@
   font-size: 2rem;
 }
 
+.card-icon .svg-inline--fa {
+  color: var(--blue-dark);
+}
+
 .benefit-card h3 {
   color: var(--primary-color);
   margin-bottom: 1rem;
@@ -590,12 +594,18 @@
   border: none;
   padding: 0.8rem 2rem;
   color: var(--primary-color);
-  font-size: var(--secondary-text-size);
+  font-size: var(--tertiary-title-size);
   cursor: pointer;
   position: relative;
   opacity: 0.7;
   transition: all 0.3s ease;
   border-radius: 30px;
+}
+
+@media (max-width: 600px) {
+  .tab-btn {
+    font-size: var(--responsive-tertiary-title-size);
+  }
 }
 
 .tab-btn.active {
@@ -635,21 +645,25 @@
   }
 }
 
-.benefits-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+.benefits-flex {
+  display: flex;
   gap: 2rem;
+  flex-wrap: wrap;
   margin-top: 2rem;
+  align-items: stretch;
   justify-content: center;
 }
 
 .benefit-item {
+  flex: 1;
   background-color: rgba(255, 255, 255, 0.05);
   padding: 2rem;
   border-radius: 8px;
   text-align: center;
   transition: all 0.3s ease;
   border: 1px solid rgba(255, 255, 255, 0.1);
+  min-width: 250px;
+  max-width: 300px;
 }
 
 .benefit-item:hover {
@@ -659,8 +673,12 @@
 
 .benefit-item i {
   font-size: 2.2rem;
-  color: var(--primary-color);
+  color: var(--blue-light);
   margin-bottom: 1rem;
+}
+
+.benefit-item .svg-inline--fa {
+  color: var(--blue-light);
 }
 
 .benefit-item h4 {
@@ -673,16 +691,20 @@
   color: var(--primary-color);
   font-size: var(--primary-text-size);
   line-height: 1.6;
+  word-wrap: normal;
 }
 
-.models-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+.models-flex {
+  display: flex;
   gap: 2rem;
+  flex-wrap: wrap;
   margin-top: 2rem;
+  align-items: stretch;
+  justify-content: center;
 }
 
 .model-card {
+  flex: 1;
   background-color: rgba(255, 255, 255, 0.05);
   padding: 2rem;
   border-radius: 8px;
@@ -691,6 +713,8 @@
   border: 1px solid rgba(255, 255, 255, 0.1);
   position: relative;
   overflow: hidden;
+  min-width: 300px;
+  max-width: 350px;
 }
 
 .model-card::before {
@@ -720,7 +744,7 @@
   justify-content: space-around;
   margin: 1.5rem 0;
   font-size: var(--primary-text-size);
-  color: var(--tertiary-color);
+  color: var(--primary-color);
 }
 
 .model-details p {
@@ -729,14 +753,18 @@
   align-items: center;
 }
 
+.model-details .svg-inline--fa {
+  color: var(--blue-light);
+}
+
 .model-details i {
   margin-bottom: 0.5rem;
-  color: var(--quarter-color);
+  color: var(--blue-light);
   font-size: 1.5rem;
 }
 
 .price-highlight {
-  color: var(--quarter-color);
+  color: var(--blue-light);
   font-weight: bold;
   font-size: var(--secondary-title-size);
   margin-top: 1rem;

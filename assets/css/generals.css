@@ -3,8 +3,8 @@
   --responsive-primary-title-size: clamp(1.8rem, 3.231rem + 2.462vw, 4rem);
   --secondary-title-size: clamp(2.5rem, 0.294rem + 3.765vw, 5rem);
   --responsive-secondary-title-size: clamp(1rem, 2.069rem + 0.738vw, 2.6rem);
-  --tertiary-title-size: 1.8rem;
-  --responsive-tertiary-title-size: 1.2rem;
+  --tertiary-title-size: clamp(1.8rem, 0.988rem + 1.129vw, 2.4rem);
+  --responsive-tertiary-title-size: clamp(1.2rem, 0.545rem + 1.745vw, 1.8rem);
 
   --primary-text-size: clamp(1.4rem, 0.588rem + 1.129vw, 2rem);
   --responsive-primary-text-size: clamp(0.9rem, 0.823rem + 0.246vw, 1rem);
@@ -108,6 +108,10 @@ ol {
 
 .button-container:hover {
   background-color: var(--primary-color);
+}
+
+.svg-inline--fa {
+  height: clamp(1.3rem, 0.624rem + 0.941vw, 1.8rem);
 }
 
 @keyframes showLeft {

@@ -47,9 +47,9 @@ async function textEffect(textList, $element) {
 }
 
 const textList = [
-  "Signature Interiors by B&B Italia",
-  "Step into timeless Italian elegance with interiors curated by B&B Italia",
-  "Every space reflects impeccable craftsmanship, refined textures, and thoughtful design—creating a sanctuary that feels both luxurious and effortlessly welcoming",
+  "A sanctuary for living, connecting, and thriving",
+  "The Central American destination set to captivate travelers and investors in 2025",
+  "Transform your future with Palma Bonita",
 ];
 
 textEffect(textList, $textEffect);
